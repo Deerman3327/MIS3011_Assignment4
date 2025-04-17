@@ -1,74 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huatuo‑Care GPT</title>
+  <title>Huatuo-Care GPT 首页</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar container">
-      <a href="index.html" class="logo-link"><img src="logo.svg" alt="Huatuo‑Care GPT logo" class="logo"></a>
+      <a href="index.html"><img src="logo.svg" class="logo" alt="Huatuo-Care GPT"></a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="content.html">Features</a></li>
-        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="content.html">功能特性</a></li>
+        <li><a href="#contact">联系我们</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <!-- 视频封面区域 -->
     <section class="hero">
-      <video class="demo-video" src="demo.mp4" autoplay muted loop playsinline></video>
-      <div class="hero-overlay">
-        <div class="hero-content container">
-          <h1 class="hero-title">Compassionate AI triage nurse &amp; bilingual concierge</h1>
-          <p class="hero-subtitle">End-to-end voice-driven assistant to help elderly users navigate healthcare</p>
-          <a href="content.html" class="btn">Explore Features</a>
+      <video class="demo-video" src="demo.mp4" autoplay muted loop playsinline style="width:100%; height:auto; display:block;"></video>
+    </section>
+
+    <!-- 项目简介 -->
+    <section class="features-intro container">
+      <h1>让老年医疗更智能、更亲切</h1>
+      <p>Huatuo-Care GPT 是一款面向中国老年用户的 AI 医疗助手，集方言理解、智能分诊、家属协作、医保解释等功能于一体，致力于打通医患之间的信息鸿沟。</p>
+    </section>
+
+    <!-- 关键优势 -->
+    <section class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-text">
+            <h2>老人友好型设计</h2>
+            <p>大字号界面 + 语音交互，无需打字，适合不熟悉智能手机的用户。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-text">
+            <h2>强大方言识别能力</h2>
+            <p>支持四川话、粤语、闽南语等多种方言，助力老年人清晰表达病情。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-text">
+            <h2>家属远程协作</h2>
+            <p>病情总结可一键通过微信发送至家属，方便及时掌握健康状态。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-text">
+            <h2>医保政策智能解释</h2>
+            <p>AI 查询各地医保规则，判断是否可报销，并解释专业术语。</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="overview container">
-      <h2>Our Vision</h2>
-      <p>Offer an end-to-end, voice-driven virtual assistant that helps elderly Chinese users navigate healthcare — from describing symptoms in dialect all the way to booking an appropriate doctor and explaining reimbursement.</p>
-    </section>
-
-    <section class="why container">
-      <h2>Why Choose Huatuo‑Care GPT?</h2>
-      <ul class="why-points">
-        <li>✅ Optimized for elderly users — voice-first, simple, and friendly</li>
-        <li>✅ Understands dialects from Sichuan, Guangdong, etc.</li>
-        <li>✅ Seamless integration with WeChat and local hospitals</li>
-        <li>✅ Certified privacy & data encryption (AES-256, PHI handling)</li>
-      </ul>
-    </section>
-
-    <section class="stats container">
-      <h2>Key Impact</h2>
-      <div class="stats-grid">
-        <div><strong>94.6%</strong><br>Dialect transcription accuracy</div>
-        <div><strong>&lt; 60s</strong><br>Avg triage time</div>
-        <div><strong>81%</strong><br>Family access rate</div>
-        <div><strong>92%</strong><br>Insurance Q&A confidence</div>
+    <!-- 数据成效 -->
+    <section class="stats">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--primary); margin-bottom: 2rem;">关键指标</h2>
+        <div class="stats-grid">
+          <div><strong>94.6%</strong>方言转写准确率</div>
+          <div><strong>&lt; 60 秒</strong>平均分诊用时</div>
+          <div><strong>81%</strong>家属查看率</div>
+          <div><strong>92%</strong>医保问题答复准确率</div>
+        </div>
       </div>
     </section>
 
-    <section id="contact-section" class="contact container">
-      <h2>Contact</h2>
-      <p>School of Management &amp; Economics, CUHKSZ<br>
-      <a href="mailto:ai-care@demo.com">ai-care@demo.com</a></p>
+    <!-- 联系方式 -->
+    <section class="features-intro container" id="contact">
+      <h2>联系我们</h2>
+      <p>主办单位：香港中文大学（深圳）管理与经济学院<br>邮箱：<a href="mailto:ai-care@demo.com">ai-care@demo.com</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Demo venue: TD414 | © 2025 Huatuo‑Care GPT Team</p>
+      <p>© 2025 Huatuo-Care GPT 团队 | 演示场地：TD414</p>
     </div>
   </footer>
 </body>
 </html>
-
-
-
