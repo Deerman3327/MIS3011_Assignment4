@@ -1,4 +1,3 @@
-```content.html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -7,16 +6,28 @@
   <title>Huatuo-Care GPT 功能特性</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    /* 自定义图片样式 */
     .feature-image {
-      height: auto;
-      max-height: 260px;
-      overflow: hidden;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f9fa;
+      padding: 1rem;
     }
+
     .feature-image img {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: contain;
-      display: block;
+      max-height: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .feature-image {
+        padding: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -27,7 +38,6 @@
       <ul class="nav-links">
         <li><a href="index.html">首页</a></li>
         <li><a href="content.html">功能特性</a></li>
-        <li><a href="#contact">联系我们</a></li>
       </ul>
     </nav>
   </header>
@@ -81,8 +91,6 @@
         </article>
       </div>
     </section>
-
-    
   </main>
 
   <footer class="site-footer">
@@ -92,4 +100,3 @@
   </footer>
 </body>
 </html>
-```
