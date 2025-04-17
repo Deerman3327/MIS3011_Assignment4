@@ -1,98 +1,80 @@
+```content.html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huatuo‑Care GPT Features</title>
+  <title>Huatuo-Care GPT 功能特性</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar container">
-      <a href="index.html" class="logo-link"><img src="logo.svg" alt="Huatuo‑Care GPT logo" class="logo"></a>
+      <a href="index.html"><img src="logo.svg" class="logo" alt="Huatuo-Care GPT"></a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="content.html">Features</a></li>
-        <li><a href="index.html#contact-section">Contact</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="content.html">功能特性</a></li>
+        <li><a href="#contact">联系我们</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="features-intro container">
-      <h1>Core Functional Modules</h1>
-      <p>Discover the AI-powered capabilities that make Huatuo‑Care GPT your trusted healthcare companion.</p>
+      <h1>核心功能模块</h1>
+      <p>体验智能医疗助手的创新功能设计</p>
     </section>
 
-    <section class="features container">
-      <article class="feature-card">
-        <div class="feature-text">
-          <h2>Dialect Understanding Agent</h2>
-          <p>Dialect ASR → spell-check → Huatuo | Standard Mandarin transcript (JSON)</p>
-        </div>
-        <div class="feature-image">
-          <img src="dialect.jpg" alt="Dialect Understanding Agent processing dialect input" loading="lazy">
-        </div>
-      </article>
+    <section class="container">
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="dialect.jpg" alt="方言理解模块" loading="lazy">
+          </div>
+          <div class="feature-text">
+            <h2>方言理解系统</h2>
+            <p>方言语音识别 → 自动纠错 → 生成标准医疗记录 (JSON格式)</p>
+          </div>
+        </article>
 
-      <article class="feature-card">
-        <div class="feature-text">
-          <h2>Doctor‑Patient Matching Engine</h2>
-          <p>Symptom embedding → ANN search → fairness filter | Top‑3 doctors + wait‑time, distance, rating</p>
-        </div>
-        <div class="feature-image">
-          <img src="recommend.jpg" alt="Doctor–Patient Matching Engine recommending doctors" loading="lazy">
-        </div>
-      </article>
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="recommend.jpg" alt="智能匹配引擎" loading="lazy">
+          </div>
+          <div class="feature-text">
+            <h2>医患匹配引擎</h2>
+            <p>症状向量分析 → 近似最近邻搜索 → 公平性筛选 → 推荐TOP3医生</p>
+          </div>
+        </article>
 
-      <article class="feature-card">
-        <div class="feature-text">
-          <h2>Family Collaboration Agent</h2>
-          <p>Summary → layman rewrite → PDF → WeChat push | Friendly report + optional TTS voice note</p>
-        </div>
-        <div class="feature-image">
-          <img src="family.jpg" alt="Family Collaboration Agent rewriting summary for layman" loading="lazy">
-        </div>
-      </article>
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="family.jpg" alt="家庭协作系统" loading="lazy">
+          </div>
+          <div class="feature-text">
+            <h2>家庭协作系统</h2>
+            <p>生成简明报告 → 自动转译PDF → 微信推送 → 可选语音播报</p>
+          </div>
+        </article>
 
-      <article class="feature-card">
-        <div class="feature-text">
-          <h2>Image Detection Module</h2>
-          <p>User photo → edge CNN → heatmap overlay | Risk level (low/medium/high) + next‑step advice</p>
-        </div>
-        <div class="feature-image">
-          <img src="detection.jpg" alt="Image Detection Module analyzing health images" loading="lazy">
-        </div>
-      </article>
-    </section>
-
-    <section class="stats container">
-      <h2>Our Impact</h2>
-      <div class="stats-grid">
-        <div><strong>94.6%</strong><br>Dialect transcription accuracy</div>
-        <div><strong>&lt; 60s</strong><br>Avg triage time</div>
-        <div><strong>81%</strong><br>Family access rate</div>
-        <div><strong>92%</strong><br>Insurance Q&A confidence</div>
-      </div>
-    </section>
-
-    <section class="testimonials container">
-      <h2>User Stories</h2>
-      <div class="testimonial-card">
-        <p>“以前去医院总是搞不清楚流程，现在我只用说一句话，它就能告诉我去哪挂号。”</p>
-        <span>— Ms. Zhang, 72, Chengdu</span>
-      </div>
-      <div class="testimonial-card">
-        <p>“我妈妈住得远，有了Huatuo我能第一时间收到她的检查结果，太贴心了。”</p>
-        <span>— Daughter of Mr. Wang, 75</span>
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="detection.jpg" alt="影像分析模块" loading="lazy">
+          </div>
+          <div class="feature-text">
+            <h2>智能影像分析</h2>
+            <p>用户上传图片 → 边缘计算处理 → 风险分级 → 后续建议</p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Demo venue: TD414 | © 2025 Huatuo‑Care GPT Team</p>
+      <p>© 2025 Huatuo-Care GPT 团队 | 演示场地: TD414</p>
     </div>
   </footer>
 </body>
 </html>
+```
